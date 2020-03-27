@@ -5,7 +5,7 @@ supportLabel: support
 
 # Comment to post on issues marked as support requests, `{issue-author}` is an
 # optional placeholder. Set to `false` to disable
-supportComment: >
+supportComment: |
   Hi there @{issue-author} :wave:!
 
   I closed this issue because it was labelled as a support question.
