@@ -1,0 +1,34 @@
+name: binder-badge
+on:
+  pull_request_target:
+
+jobs:
+  badge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: manics/action-binderbadge@pullymcpullface
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+
+name: binder-badge-nbgitpuller
+on:
+  pull_request_target:
+
+jobs:
+  badge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: manics/action-binderbadge@pullymcpullface
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          environmentRepo: gh/binder-examples/conda/HEAD
+          updateDescription: true
+          urlpath: lab
