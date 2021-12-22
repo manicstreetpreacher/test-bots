@@ -14,12 +14,7 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
-name: binder-badge-nbgitpuller
-on:
-  pull_request_target:
-
-jobs:
-  badge:
+  pullymcpullface-description-badge:
     runs-on: ubuntu-latest
     permissions:
       contents: read
