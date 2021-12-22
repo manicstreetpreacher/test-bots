@@ -24,6 +24,6 @@ jobs:
       - uses: manics/action-binderbadge@pullymcpullface
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          environmentRepo: gh/binder-examples/conda/HEAD
+          environmentRepo: gist/manics/c34db392c2bd2eb133c58c83c59358a1/HEAD
           updateDescription: true
           urlpath: lab
