@@ -3,7 +3,7 @@ on:
   pull_request_target:
 
 jobs:
-  badge:
+  comment-badge:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -27,3 +27,4 @@ jobs:
           environmentRepo: gist/manics/c34db392c2bd2eb133c58c83c59358a1/HEAD
           updateDescription: true
           urlpath: lab
+          persistentLink: false
