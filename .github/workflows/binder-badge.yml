@@ -10,7 +10,7 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: manics/action-binderbadge@pullymcpullface
+      - uses: manics/action-binderbadge@dev
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
@@ -21,7 +21,7 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: manics/action-binderbadge@pullymcpullface
+      - uses: manics/action-binderbadge@dev
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           environmentRepo: gist/manics/c34db392c2bd2eb133c58c83c59358a1/HEAD
