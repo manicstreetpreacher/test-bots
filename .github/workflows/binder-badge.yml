@@ -3,28 +3,39 @@ on:
   pull_request_target:
 
 jobs:
-  comment-badge:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      issues: write
-      pull-requests: write
-    steps:
-      - uses: manics/action-binderbadge@dev
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+  # comment-badge:
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: read
+  #     issues: write
+  #     pull-requests: write
+  #   steps:
+  #     - uses: manics/action-binderbadge@dev
+  #       with:
+  #         githubToken: ${{ secrets.GITHUB_TOKEN }}
 
-  pullymcpullface-description-badge:
+  # pullymcpullface-description-badge:
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: read
+  #     issues: write
+  #     pull-requests: write
+  #   steps:
+  #     - uses: manics/action-binderbadge@dev
+  #       with:
+  #         githubToken: ${{ secrets.GITHUB_TOKEN }}
+  #         environmentRepo: gist/manics/c34db392c2bd2eb133c58c83c59358a1/HEAD
+  #         updateDescription: true
+  #         urlpath: lab
+  #         persistentLink: false
+
+  badge:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      issues: write
-      pull-requests: write
     steps:
-      - uses: manics/action-binderbadge@dev
+      - uses: manics/action-binderbadge@d7fc6853e6b1944335d7a280059e5556e7b6bf0e
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          environmentRepo: gist/manics/c34db392c2bd2eb133c58c83c59358a1/HEAD
+          environmentRepo: gh/diofant/mybinder-env/HEAD
+          urlpath: lab/tree/test.ipynb
           updateDescription: true
-          urlpath: lab
           persistentLink: false
