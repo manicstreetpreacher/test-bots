@@ -5,4 +5,4 @@ https://github.com/apps/support is installed (see https://github.com/jupyterhub/
 
 Testing https://github.com/manics/action-binderbadge/tree/pullymcpullface
 
-⭐🎄🎁 🍫 
+⭐🎄🎁🍫
